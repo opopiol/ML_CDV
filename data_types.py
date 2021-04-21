@@ -98,5 +98,6 @@ union_list = list(set().union(fake_names_1, fake_names_2))
 print(union_list)
 
 # Find and print the difference between lists
-difference_list = list(set(fake_names_1) - set(fake_names_2))
+intersection_list = list(set.intersection(set(fake_names_1), set(fake_names_2)))
+difference_list = list(set(union_list) - set(intersection_list))
 print(difference_list)
