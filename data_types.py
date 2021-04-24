@@ -69,11 +69,8 @@ print(paired_list)
 # Print the pair position and variables using f-string.
 # Example:
 # "Index of a3 and b3 is equal 2"
-for a, b in paired_list:
-    first_el = a
-    second_el = b
-
-    print(f'Index of {a} and {b} is equal {first_list.index(a)}')
+for first_el, second_el in paired_list:
+    print(f'Index of {first_el} and {second_el} is equal {first_list.index(first_el)}')
 
 #3. Sets (unordered & unique data)
 
@@ -87,11 +84,11 @@ fake_names_2 = ['Andre', 'Anthony', 'Lauren', 'Douglas', 'Jonathan', 'Richard',
                 'Matthew', 'Jared', 'Erica']
 
 # Find the overlapping names in above lists
-c = list((Counter(fake_names_1) & Counter(fake_names_2)).elements())
-print(c)
+overlapping_names = list((Counter(fake_names_1) & Counter(fake_names_2)).elements())
+print(overlapping_names)
 
 # Print number of "duplicated" names
-print('Number of "duplicated" names is', len(c))
+print('Number of "duplicated" names is', len(overlapping_names))
 
 # Find and print the union of above lists
 union_list = list(set().union(fake_names_1, fake_names_2))
