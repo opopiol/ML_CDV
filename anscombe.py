@@ -27,7 +27,6 @@ def get_anscombe_results(anscombe_df):
 
 
 def get_anscombe_plot(anscombe_df):
-    #plot
     ansc_plot = sns.lmplot(x="x", y="y", col="dataset", hue="dataset",
                data=anscombe_df, col_wrap=2, ci=None, palette="muted",
                height=4, scatter_kws={"s": 50, "alpha": 1})
