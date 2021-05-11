@@ -10,6 +10,7 @@ dependencies:
  - pre-commit
  - flake8
  - pip
- - pandas-profiling
+ - streamlit
  - seaborn
  - altair
+ - pandas-profiling
